@@ -13,10 +13,9 @@ public class IntroToHashMaps {
 
 	// 2. Using a for-loop, add 500 entries to your HashMap. The key entry will be
 	// the
-	for(int i = 0;i<500;i++){
-		squareRoot.put(i, Math.sqrt(i));
+	for(Integer key: squareRoot.keySet()) {
 		
-		System.out.print("\nThe square Root of " + i + " is " + Math.sqrt(i));
+		System.out.format("The square root of %d is %f\n", key, squareRoot );
 	}
 	
 	
