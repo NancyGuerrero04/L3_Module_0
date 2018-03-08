@@ -101,5 +101,18 @@ public class LogSearch implements ActionListener {
 			}
 			JOptionPane.showMessageDialog(null, buffer.toString());
 		}
+		
+		if(e.getSource().equals(removeButton)) {
+			String enteredID2 = JOptionPane.showInputDialog("Enter your ID number");
+			int intNewID2 = Integer.parseInt(enteredID2);
+
+			if (Students.containsKey(intNewID2) == true) {
+				Students.remove(intNewID2);
+
+			} else {
+				JOptionPane.showMessageDialog(null, "Sorry, the user does not exist.");
+			}
+			
+		}
 	}
 }
